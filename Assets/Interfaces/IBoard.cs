@@ -10,6 +10,8 @@ namespace Assets.Interfaces
     {
         List<IBlock> GetBlocksOnSameRow(IBlock asBlock);
         List<IBlock> GetBlocksOnSameColumn(IBlock asBlock);
-        List<IBlock> GetLastActivatedBlock(IBlock block);
+        IBlock GetLastActivatedBlock();
+        void AlertClick(IBlock block);
+        List<IBlock> GetAdjacentBlocks(IBlock block);
     }
 }

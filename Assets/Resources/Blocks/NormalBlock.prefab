@@ -354,8 +354,7 @@ MonoBehaviour:
   OffMaterial: {fileID: 2100000, guid: ee086f0bf56855c43805cce2c0bba677, type: 2}
   ClickDownClip: {fileID: 8300000, guid: 50dc9ea23113c6e4f9285ff50033bea4, type: 3}
   ClickUpClip: {fileID: 8300000, guid: ce8a1bb1bb14bf44f802820d7473ba50, type: 3}
-  Clickable: 1
-  Type: 1
+  BlockType: 0
 --- !u!114 &114220016251290096
 MonoBehaviour:
   m_ObjectHideFlags: 1

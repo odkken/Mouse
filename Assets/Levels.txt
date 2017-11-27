@@ -1,13 +1,54 @@
-﻿g
+﻿  N
+wNNN
+ N
 ///
-gng
+NNN
+ w
 ///
-NgN
+NNNR
+ w
 ///
-NnN
-ngn
-NnN
+C
+NR
 ///
-RnN
-ngn
-NnC
+CC
+nR
+///
+NNNN
+ w
+///
+ Nw
+NNN
+ N
+///
+crc
+r r
+crc
+///
+cnn
+ncn
+nnc
+///
+rc
+cr
+///
+PnP
+///
+PP
+///
+PnP
+ P
+///
+PnPnP
+///
+PpPnP
+///
+rnRnR
+///
+nNn
+///
+nPn
+///
+nNn
+nnn
+///

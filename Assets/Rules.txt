@@ -1,7 +1,10 @@
-﻿g = goal - star marking
+﻿MAKE A WALKING DUDE
+
+g = goal - star marking
 n = normal - no marking
 r = row inverter - horizontal bar
 c = column inverter - vertical bar
 x = r/c inverter - plus sign
 p = previous inverter (does it apply to itself?) - circle
 s = flips any of the same color/type
+d = doesn't activate until you step off it

@@ -22,7 +22,7 @@ namespace Assets
 
             if (GUILayout.Button("Load"))
             {
-                b.LoadFromFile();
+                b.LoadFromFile(true);
             }
 
 

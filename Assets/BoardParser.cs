@@ -8,21 +8,23 @@ namespace Assets
 {
     public class BlockLocation
     {
-        public BlockLocation(BlockType type, bool activated, int x, int y)
+        public bool Clickable { get; }
+
+        public BlockLocation(BlockType type, int x, int y, bool clickable)
         {
+            Clickable = clickable;
             Type = type;
-            Activated = activated;
             X = x;
             Y = y;
         }
 
         public BlockType Type { get; }
-        public bool Activated { get; }
         public int X { get; }
         public int Y { get; }
+
         public override string ToString()
         {
-            return $"({X},{Y}): {Type}, {(Activated ? "ON" : "OFF")}";
+            return $"({X},{Y}): {Type}";
         }
     }
 
@@ -31,8 +33,8 @@ namespace Assets
 
         static readonly Dictionary<char, BlockType> LetterLookup = new Dictionary<char, BlockType>
         {
-            { 'g', BlockType.Goal},
             { 'n', BlockType.Normal},
+            { 'w', BlockType.Walkable},
             { 'r', BlockType.RowInvert},
             { 'c', BlockType.ColumnInvert},
             { 'x', BlockType.RowAndColumnInvert},
@@ -53,7 +55,7 @@ namespace Assets
                     if (char.IsLetter(c))
                     {
                         var type = LetterLookup[char.ToLower(c)];
-                        blocks.Add(new BlockLocation(type, char.IsUpper(c), x, y));
+                        blocks.Add(new BlockLocation(type, x, y, char.IsUpper(c)));
                     }
                     x++;
                 }
